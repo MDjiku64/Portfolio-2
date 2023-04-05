@@ -1,0 +1,107 @@
+*{
+
+  box-sizing: border-box;
+  
+  font-family: 'Fira Sans', sans-serif;
+  }
+  
+  body{
+  margin: 0;
+  
+    background-color: green;
+  }
+  
+      
+      h1{
+        font-size: 2.5rem;
+        text-align: center;
+        
+        
+        }
+        
+        a{
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        
+        }
+  
+      [class*="col-"]{
+  
+  float: left;
+  padding: 10px;
+  
+  
+      }
+  
+  /* for mobile */
+  
+  [class*="col-"]{
+  width: 100%;
+  
+  
+  }
+  
+  
+        
+        .navbar{
+        background-color: rgb(7, 86, 88);
+       
+        padding: 1% 7%;
+        text-align: center;
+  
+  
+        }
+  
+        .navbar h1{
+          color: white;
+          margin: 0;
+          padding-top: 10px;
+          
+          }
+  
+  .navmenu{
+  
+  display: flex;
+  
+  flex-direction: column;
+  text-transform: uppercase;
+  
+  
+  }
+  
+  .navmenu a{
+  background-color: rgb(15, 144, 146);
+  border-radius: 10px;
+  
+  margin: 7px 10px;
+  
+  padding: 10px;
+  
+  
+  }
+  
+  .navmenu a:hover{
+  
+  background-color: gray;
+  
+  }
+  
+  
+        /* need to clear floating after navbar */
+  
+  .navbar::after{
+  content: '';
+  display: table;
+  clear: both;
+  
+  
+  }
+  
+  .navbar h1{
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  
+  }
+  
